@@ -10,22 +10,28 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
-  <!-- js links -->
+  <!-- main js files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
 
-  <!-- folder links -->
+  <!-- angular  Config/Routes -->
   <script src="app/route.js"></script>
   <script src="app/app.js"></script>
+
+  <!-- angular  Controllers -->
   <script src="app/controllers/userCtrl.js"></script>
+  <script src="app/controllers/mainCtrl.js"></script>
+
+  <!-- angular  services -->
   <script src="app/services/userServices.js"></script>
+  <script src="app/services/authServices.js"></script>
   
 
 </head>
-<body ng-app = 'userApp'>
+<body ng-app = 'userApp' ng-controller = "mainCtrl as main">
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">

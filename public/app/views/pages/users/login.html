@@ -2,15 +2,15 @@
 <h3>User login</h3>
 </div>
 
-<form ng-submit="register.regUser(regData);">
+<form ng-submit="main.doLogin(loginData);">
 
 	<!-- Username -->
 	<labbel>Username:</label>
-	<input class="form-control" type="text" name="username" placeholder="please enter username" ng-model='register.regData.username'>
+	<input class="form-control" type="text" name="username" placeholder="please enter username" ng-model='main.loginData.username'>
 	<br>
 	<!-- Password -->
 	<labbel>Password:</label>
-	<input class="form-control" type="text" name="password" placeholder="please enter password" ng-model='register.regData.password'>
+	<input class="form-control" type="text" name="password" placeholder="please enter password" ng-model='main.loginData.password'>
 	<br>
 	<button class="btn btn-primary" type="submit">Login</button>
 </form>
@@ -18,19 +18,19 @@
 <br>
 <br>
 
-<div class="jumbotron text-center" ng-show="register.loading">
+<div class="jumbotron text-center" ng-show="main.loading">
 	<span class="glyphicon glyphicon-repeat spinner"></span>
 	<p>loading...</p>
 </div>
 
 <br>
 
-<div class="row show-hide-message" ng-show="register.sucessMsg">
-	<div class="alert alert-success">{{register.sucessMsg}}</div>
+<div class="row show-hide-message" ng-show="main.sucessMsg">
+	<div class="alert alert-success">{{main.sucessMsg}}</div>
 </div>
 
 <br>
 
-<div class="row show-hide-message" ng-show="register.errorMsg">
-	<div class="alert alert-danger">{{register.errorMsg}}</div>
+<div class="row show-hide-message" ng-show="main.errorMsg">
+	<div class="alert alert-danger">{{main.errorMsg}}</div>
 </div>
